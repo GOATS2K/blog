@@ -1,0 +1,23 @@
+languageCode = "en"
+languageName = "English"
+displayName = "EN"
+isoCode = "en"
+weight = 1
+rtl = false
+
+title = "nectarine.sh"
+# logo = "img/logo.jpg"
+description = "A blog about programming and other nerdy stuff."
+# copyright = "Copy, _right?_ :thinking_face:"
+
+dateFormat = "2006-01-02"
+
+[author]
+  name = "John Patrick Glattetre"
+  image = "img/me.png"
+  headline = "Welcome in!"
+  bio = "A 22 year old who is passionate about software engineering, and drum and bass."
+  links = [
+    { email = "mailto:jp@nectarine.sh" },
+    { github = "https://github.com/GOATS2K" }
+  ]
