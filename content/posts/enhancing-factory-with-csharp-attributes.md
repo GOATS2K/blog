@@ -1,6 +1,6 @@
 ---
 title: "Enhancing the Factory Pattern with C# Attributes"
-date: 2022-12-18
+publishDate: "2022-12-18T00:00:00+0100"
 tags: ["programming"]
 ---
 
@@ -8,6 +8,8 @@ tags: ["programming"]
 # Introduction
 
 Hi, welcome to the first post on my blog!
+
+This is also my first post on the [C# Advent calendar](https://www.csadvent.christmas/), please go check out the other posts as well!
 
 I’m a computer science student doing my final year at De Montfort University in the United Kingdom. For my bachelor thesis I decided to build a music streaming service from scratch, called Coral. The backend is written using C# with [ASP.NET](http://ASP.NET) Core and the frontend with React, in hopes that I’ll eventually make a mobile application using React Native.
 
