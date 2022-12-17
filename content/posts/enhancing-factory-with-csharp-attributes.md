@@ -1,7 +1,6 @@
 ---
 title: "Enhancing the Factory Pattern with C# Attributes"
 date: "2022-12-17"
-publishDate: "2022-12-18T00:00:00+0100"
 tags: ["programming"]
 ---
 
