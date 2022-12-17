@@ -1,5 +1,6 @@
 ---
 title: "Enhancing the Factory Pattern with C# Attributes"
+description: "Attributes can make your life so much easier!"
 date: "2022-12-17"
 tags: ["programming"]
 ---
