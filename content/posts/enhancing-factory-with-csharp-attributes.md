@@ -6,7 +6,7 @@ tags: ["programming"]
 ---
 
 
-# Introduction
+## Introduction
 
 Hi, welcome to the first post on my blog!
 
@@ -14,13 +14,13 @@ This is also my first post on the [C# Advent calendar](https://www.csadvent.chri
 
 I’m a computer science student doing my final year at De Montfort University in the United Kingdom. For my bachelor thesis I decided to build a music streaming service from scratch, called Coral. The backend is written using C# with [ASP.NET](http://ASP.NET) Core and the frontend with React, in hopes that I’ll eventually make a mobile application using React Native.
 
-# Preface
+## Preface
 
 As a DJ and producer, I already have a significant collection of music in lossless format that I transcode to 192kbps AAC to listen to on my portable devices. I settled on AAC as it’s a codec that works everywhere that I listen to music and sounds great at a low bitrate.
 
 In order to serve transcoded content in real-time, it must be processed into a chunked format that the browser can play back. One of the most common streaming protocols used today is Apple’s HTTP Live Streaming protocol (HLS). As the protocol primarily supports AAC as its lossy stereo codec of choice, I figured I’d try using it for my project.  The only quirk with AAC, is that no two AAC encoders sound the same. According to members of the audio discussion board HydrogenAudio, [the best AAC encoder to use is Apple’s encoder](https://wiki.hydrogenaud.io/index.php?title=AAC_encoders), which sadly only works on MacOS and Windows, unless you’re willing to go through the trouble of running it with Wine on Linux. This means that the transcoding system will have to accommodate for multiple AAC encoders, dependant on what platform you’re running. Maybe I’ll end up moving to Opus in the future, who knows.
 
-# Building the factory - Prerequisites
+## Building the factory - Prerequisites
 
 Based on the information above, our system needs to know the following:
 
@@ -81,7 +81,7 @@ public interface IEncoder
 
 They must all provide methods to verify that they’re available on the system, an argument builder for its command line utility and finally a setup method. The interface provides a default implementation for `ConfigureTranscodingJob` which has been omitted for brevity.
 
-# Building the factory
+## Building the factory
 
 Let’s create an implementation of the encoder interface and build the factory.
 
@@ -168,7 +168,7 @@ Using the factory is as simple as this.
 var encoder = _encoderFactory.GetEncoder(OutputFormat.AAC);
 ```
 
-# Testing the factory
+## Testing the factory
 
 Just to make sure the factory works as expected, I made some tests to ensure that I got the encoders I expected on various platforms. I am using NSubstitute as my mocking library, which allows me to mock parts of a class without modifying the rest of its functionality. 
 
