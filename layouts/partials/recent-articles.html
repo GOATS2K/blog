@@ -1,0 +1,5 @@
+{{ if .Site.Params.homepage.showRecent | default false }}
+{{ range first 5 (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) 5).Pages }}
+{{ partial "article-link.html" . }}
+{{ end }}
+{{ end }}

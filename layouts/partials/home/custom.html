@@ -1,0 +1,31 @@
+<div class="{{ if not .Site.Params.homepage.showRecent }}
+    h-full
+  {{ end }} flex flex-col">
+  <div class="flex flex-col sm:flex-row">
+    {{ with .Site.Author.image }}
+    {{ $authorImage := resources.Get . }}
+    {{ if $authorImage }}
+    {{ $authorImage := $authorImage.Fill "288x288" }}
+    <img class="flex rounded-full self-center mb-2 h-32 w-32" width="128" height="128"
+      src="{{ $authorImage.RelPermalink }}" />
+    {{ end }}
+    {{ end }}
+    <div class="flex flex-col px-4 self-center">
+      <h1 class="text-lg font-bold">
+        {{ .Site.Author.name | default .Site.Title }}
+      </h1>
+      {{ with .Site.Author.headline }}
+      <h2 class="text-lg text-neutral-400 dark:text-neutral-100">
+        {{ . | markdownify | emojify }}
+      </h2>
+      {{ end }}
+      <div class="text-2xl self-center md:self-start">
+        {{ partialCached "author-links.html" . }}
+      </div>
+    </div>
+  </div>
+  <section class="prose dark:prose-invert">{{ .Content | emojify }}</section>
+</div>
+<section>
+  {{ partial "recent-articles.html" . }}
+</section>

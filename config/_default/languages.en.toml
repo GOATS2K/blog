@@ -15,9 +15,10 @@ dateFormat = "2006-01-02"
 [author]
   name = "John Patrick Glattetre"
   image = "img/me.png"
-  headline = "Welcome in!"
+  headline = "Welcome to my blog!"
   bio = "A 22 year old who is passionate about software engineering, and drum and bass."
   links = [
     { email = "mailto:jp@nectarine.sh" },
-    { github = "https://github.com/GOATS2K" }
+    { github = "https://github.com/GOATS2K" },
+    { soundcloud = "https://soundcloud.com/closurednb" }
   ]
