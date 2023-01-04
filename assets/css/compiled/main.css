@@ -1737,6 +1737,11 @@ body:has(#menu-controller:checked) {
   margin: 0.25rem;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .-mx-2 {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
@@ -1871,10 +1876,6 @@ body:has(#menu-controller:checked) {
   height: 100%;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
 .h-screen {
   height: 100vh;
 }
@@ -1901,10 +1902,6 @@ body:has(#menu-controller:checked) {
 
 .min-h-0 {
   min-height: 0px;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .w-12 {
@@ -2280,14 +2277,14 @@ body:has(#menu-controller:checked) {
   vertical-align: text-bottom;
 }
 
-.text-lg {
-  font-size: 1.125rem;
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -2295,14 +2292,19 @@ body:has(#menu-controller:checked) {
   line-height: 2.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-base {
@@ -2908,6 +2910,10 @@ body:has(#menu-controller:checked) {
     align-items: center;
   }
 
+  .sm\:self-start {
+    align-self: flex-start;
+  }
+
   .sm\:p-6 {
     padding: 1.5rem;
   }
@@ -2957,10 +2963,6 @@ body:has(#menu-controller:checked) {
     width: 33.333333%;
   }
 
-  .md\:self-start {
-    align-self: flex-start;
-  }
-
   .md\:p-\[10vh\] {
     padding: 10vh;
   }
@@ -2968,6 +2970,11 @@ body:has(#menu-controller:checked) {
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -3007,6 +3014,11 @@ body:has(#menu-controller:checked) {
   .lg\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   [dir="ltr"] .ltr\:lg\:pl-8 {
