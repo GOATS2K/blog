@@ -1,0 +1,37 @@
+/* Congo scheme */
+:root {
+  --color-neutral: 255, 255, 255;
+  /* Gray */
+  --color-neutral-50: 247, 246, 246;
+  --color-neutral-100: 228, 227, 227;
+  --color-neutral-200: 201, 198, 199;
+  --color-neutral-300: 166, 162, 162;
+  --color-neutral-400: 131, 126, 126;
+  --color-neutral-500: 105, 99, 100;
+  --color-neutral-600: 83, 78, 79;
+  --color-neutral-700: 68, 65, 65;
+  --color-neutral-800: 57, 54, 54;
+  --color-neutral-900: 26, 25, 25;
+  /* Sunset Orange */
+  --color-primary-50: 255, 242, 241;
+  --color-primary-100: 255, 226, 224;
+  --color-primary-200: 255, 203, 199;
+  --color-primary-300: 255, 166, 160;
+  --color-primary-400: 255, 115, 105;
+  --color-primary-500: 249, 79, 67;
+  --color-primary-600: 230, 41, 28;
+  --color-primary-700: 194, 31, 19;
+  --color-primary-800: 160, 29, 20;
+  --color-primary-900: 133, 30, 23;
+  /* Fuzzy Wuzzy Brown */
+  --color-secondary-50: 252, 245, 244;
+  --color-secondary-100: 248, 233, 232;
+  --color-secondary-200: 243, 215, 213;
+  --color-secondary-300: 234, 186, 183;
+  --color-secondary-400: 221, 145, 140;
+  --color-secondary-500: 199, 94, 87;
+  --color-secondary-600: 183, 82, 75;
+  --color-secondary-700: 153, 66, 60;
+  --color-secondary-800: 127, 58, 53;
+  --color-secondary-900: 107, 53, 49;
+}
