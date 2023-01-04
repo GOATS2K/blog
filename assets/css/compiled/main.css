@@ -2972,9 +2972,9 @@ body:has(#menu-controller:checked) {
     padding-right: 6rem;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -3016,9 +3016,9 @@ body:has(#menu-controller:checked) {
     padding-right: 8rem;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   [dir="ltr"] .ltr\:lg\:pl-8 {
