@@ -1,0 +1,8 @@
+<div class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-neutral-900">
+  <span class="flex self-center text-primary-800 dark:text-neutral-100 ltr:pr-3 rtl:pl-3">
+    {{ partial "icon.html" (.Get 0 | default "triangle-exclamation") }}
+  </span>
+  <span class="text-neutral-700 dark:text-neutral-200">
+    {{- .Inner | markdownify -}}
+  </span>
+</div>
