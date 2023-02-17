@@ -3,6 +3,7 @@ title: "Creating a Search Engine For My Music Streaming Platform"
 description: "Coral needs a search engine, so let's make one!"
 date: "2023-02-17"
 tags: ["programming", "coral"]
+showComments: true
 ---
 
 {{< alert "circle-info" >}}
