@@ -320,7 +320,7 @@ Once we have the tracks matching the query, we can fetch them from the database.
 We've just built a highly performant search system that can help users find their music with little effort. I've had countless ideas about extending the search algorithm to also index label names, catalog numbers, genres, lyrics, etc.
 Imagine how cool it would be to search for a part of a lyric and just find the song you're looking for...
 
-Now it's just a question of scalability - how will it perform when you through 50,000+ tracks at it?
+Now it's just a question of scalability - how will it perform when you throw 50,000+ tracks at it?
 
 I'll be writing more about the fun stuff I make while hacking on Coral.
 There's also an [RSS feed you can subscribe to](/index.xml) want to keep up to date with my latest articles.
