@@ -1,7 +1,7 @@
 <div class="{{ if not .Site.Params.homepage.showRecent }}
     h-full
   {{ end }} flex flex-col">
-  <div class="flex flex-col items-center justify-center my-6 lg:my-2 sm:flex-row">
+  <div class="flex flex-col items-center my-6 lg:my-2 sm:flex-row">
     {{ with .Site.Author.image }}
     {{ $authorImage := resources.Get . }}
     {{ if $authorImage }}
@@ -10,7 +10,7 @@
       src="{{ $authorImage.RelPermalink }}" />
     {{ end }}
     {{ end }}
-    <div class="flex flex-col self-center px-4">
+    <div class="flex flex-col px-4">
       <h1 class="text-xl font-bold md:text-3xl lg:text-4xl">
         {{ .Site.Author.name | default .Site.Title }}
       </h1>
@@ -25,7 +25,7 @@
     </div>
   </div>
   <section class="prose dark:prose-invert">{{ .Content | emojify }}</section>
-  <hr style="width: 10%" class="m-auto">
+  <hr>
   <section>
     {{ partial "recent-articles.html" . }}
   </section>
