@@ -21,11 +21,9 @@ Why don't you check out some of the things I've made [here](/projects)?
 
 ## I am available for hire!
 
-I'm looking for work starting in June 2023. 
+I'm looking for work starting in May 2023. 
 I'm open to pretty much anything related to software engineering - backend development is where I am the most skilled, although my frontend skills are steadily improving.
 I have some leadership experience and enjoy mentoring others, but solving complex software problems is where I thrive.
-
-I will be relocating to London, UK with my partner, so I would love to work in the area. 
 
 My contact details are in my CV linked above.
 
