@@ -48,8 +48,7 @@ I initially don't want the plugins to be able to tamper with a user's database b
 There are a few security caveats to keep in mind when you're supporting plugins, especially when it comes to dynamically loaded controllers.
 Once the plugin controller is loaded into the host, it has access to every single service the host is able to access via ASP.NET Core's `HttpContext`.
 
-This can be mitigated by either resolving the controller actions yourself with reflection or by allowing your plugins to host their own ASP.NET Core instances and proxying calls to that.
-However, implementing these mitigation tactics are beyond the scope of this article.
+However, implementing mitigation tactics are beyond the scope of this article.
 
 ## Figuring out how to solve our system requirements
 To start off, let's look at what we'll need to build a plugin that logs information about the currently playing song and sends it to [Last.fm](https://last.fm).
