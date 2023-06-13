@@ -4,10 +4,8 @@ layout: "simple"
 ---
 Here are some of my projects/scripts! Some might not be available to the public. 
 
-They aren't the most elegant projects ever, but they were super useful to me when I made them.
-
-### Noteworthy
-- Coral - A self-hosted music streaming service I am currently writing for my final year in university, _to be open-sourced in May 2023_
+### Main Projects
+- [Coral](https://coral.nectarine.sh) - A self-hosted music streaming service, in active development
 - [Overpass](https://github.com/GOATS2K/overpass) - A simple live video streaming service
 
 ### 2022
