@@ -7,7 +7,7 @@ rtl = false
 
 title = "nectarine.sh"
 # logo = "img/logo.jpg"
-description = "A blog about programming and other nerdy stuff."
+description = "A blog about programming and other fun things, by John Patrick Glattetre."
 # copyright = "Copy, _right?_ :thinking_face:"
 
 dateFormat = "2006-01-02"
@@ -16,7 +16,7 @@ dateFormat = "2006-01-02"
   name = "John Patrick Glattetre"
   image = "img/me.png"
   headline = "Welcome to my blog!"
-  bio = "A 22 year old who is passionate about software engineering, and drum and bass."
+  bio = "Passionate about software engineering and drum and bass."
   links = [
     { email = "mailto:jp@nectarine.sh" },
     { github = "https://github.com/GOATS2K" },
