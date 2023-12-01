@@ -52,7 +52,7 @@ function setGiscusTheme(theme) {
 }
 
 function setGiscusThemeOnLoad() {
-  const theme = userPreference != null ? userPreference : sitePreference;
+  const theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
   const interval = setInterval(() => {
     const iframe = document.querySelector('iframe.giscus-frame');
     const loaded = !iframe.classList.contains('giscus-frame--loading');
