@@ -1,5 +1,6 @@
 ---
 title: "Using GitHub Releases to update my closed-source tools"
+description: "Updating open source projects is easy enough, how can we leverage GitHub to update our private tools as well?"
 date: "2023-12-01T00:00:00+01:00"
 tags: ["programming"]
 showComments: true
