@@ -1,9 +1,8 @@
 ---
-title: "Using GitHub Releases to update closed-source software"
+title: "Using GitHub Releases to update my closed-source tools"
 date: "2023-12-01T00:00:00+01:00"
 tags: ["programming"]
 showComments: true
-draft: true
 ---
 
 {{< alert "circle-info" >}}
@@ -12,15 +11,14 @@ This is the first article in this year's [C# Advent Calendar](https://csadvent.c
 
 Hey! Long time no see. 
 
-Some time last summer, I wrote a tool that I use on many different platforms. It runs on my Windows desktop at home, Macbook on the go and on my Linux server in the cloud. I built the tool as a self-contained executable to keep it as easy to use as possible.
+Last summer I wrote a tool that I use on many different platforms. It runs on my Windows desktop at home, Macbook on the go and on my Linux server in the cloud. I built the tool as a self-contained executable to ensure it is as easy to use as possible.
 
-## Updates can be a pain
 It was great to use once it was up and running but annoying to update as it required me to manually build all the different versions of the app and copy them to the respective machines by hand. On macOS, I also had to unquarantine and codesign the binary to allow it to run in the first place as I do most of my development on my desktop.
 
 I eventually shared the tool with some of my friends via Discord who seemed to enjoy using it as well, which unfortunately for me, added an extra dimension to the pain of distributing updates. The tool's source code exists in a private GitHub repository and I had a CI/CD pipeline for building it and running unit tests - so why don't I leverage that to create updates for my tool?
 
 ## Leveraging my private GitHub repository
-I also wanted to take it a step further and use the brilliant little .NET tool [versionize](https://github.com/versionize/versionize) to automatically version new releases and generate a changelog for me.
+I also wanted to take it a step further and use the brilliant .NET tool [versionize](https://github.com/versionize/versionize) to version new releases and generate a changelog for me.
 So now - all that's required for me to create a new update is to run `versionize`, push the new tag to my GitHub repo and my CI pipeline will take care of creating a new version of my tool.
 
 Problem solved... right?
@@ -37,7 +35,7 @@ Version 1.0 of the JavaScript runtime Bun had just released around the time I th
 
 ### How does it work?
 
-Constellation works by querying GitHub for releases on all your repositories. This sounds scary at first, but Constellation is made with security in mind. You generate access tokens with a claim that has contains that restricts access exclusively to your tool's repository. This means that even if your tool's Constellation token is compromised, it does not have access to your GitHub account.
+Constellation works by querying GitHub for releases on all your repositories. This sounds scary at first, but Constellation is made with security in mind. You generate access tokens with a claim that restricts access exclusively to your tool's repository. This means that even if your tool's Constellation token is compromised, it does not have access to your GitHub account.
 
 My tool's binaries all follow this naming convention:
 
@@ -55,7 +53,7 @@ This way, Constellation can parse the binary's version, platform and architectur
 
 ## Using Constellation in my tool
 
-I created a Docker image for Constellation so I could easily use host it from my dedicated server, however I'm sure it'll work just fine on something like [Fly.io's Hobby plan](https://fly.io/docs/about/pricing/) or any cheap VPS. Take a look at [its README](https://github.com/GOATS2K/Constellation) to get set up.
+I created a Docker image for Constellation so I could easily use host it from my dedicated server, however I'm sure it'll work just fine on something like [Fly.io's Hobby plan](https://fly.io/docs/about/pricing/) or any cheap VPS. Take a look at [its README](https://github.com/GOATS2K/Constellation) if you'd like to try it out.
 
 My tool is a .NET 8.0 console application using [Spectre.Console](https://spectreconsole.net/) and [RestSharp](https://restsharp.dev/).
 
@@ -266,7 +264,7 @@ private void PerformUpdate(StatusContext context,
 The best way I found to update binaries while keeping an easy way to rollback to the old version was by simply renaming the currently running executable to `executable.old` and unzipping the update to whereever the tool is currently located.
 
 ### Tying it all together
-Finally, here's the update command. Note that a lot of the code has been omitted for brevity.
+Finally, here's the update command. Note that some code has been omitted for brevity.
 
 ```csharp
 public class UpdateCommand : AsyncCommand
